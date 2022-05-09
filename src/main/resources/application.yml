@@ -12,37 +12,6 @@ spring:
           username: ${CLOUD_CONFIG_GIT_USER:''}
           password: ${CLOUD_CONFIG_GIT_PASSWORD:''}
           timeout: ${CLOUD_CONFIG_TIMEOUT:4}
-          clone-on-start: false
-          ignore-local-ssh-settings: true
-          refresh-rate: 300
-          private-key: |
-            -----BEGIN RSA PRIVATE KEY-----
-            MIIEpAIBAAKCAQEAzEFu6U5ZLbmi72qaXEmLGIZieGSap38+jczGDxfJCGhP3/Ng
-            dpCRC+fZ+BmJabm2na61OvXrJYY8JInHMI2iuCZVRdVy2tRgghiyOMiH8mEQZ3Dy
-            +BGoSeMmfFjIj/uwZvI8D27c+pIpOxa6xOK9/aEx/PQQ9YT0fMEucqStAmD6rvFD
-            kQrcEDrcyThHFedEpiVOz92f9E4B9/iQUxZpUaXz7e1IQxjVlp21OCrKWhgI6WqT
-            ikivonypsvmk/8KIT5uW02fHXouvOw0o2sUX1/FQ+FtvUBJqxQ4gY03ph3dGZs4M
-            bAl7FvKx5Gd/8P9RMRXCjKTO0BBqpFoZrZ9xVwIDAQABAoIBAQCILPOx7f88ofAE
-            KJFjB9EJd8a8t234T7g3t5cwRs5LoafnCg583aMmSdwjMXtQlnUuqWTAO2YbbWQ5
-            g/Xd4//hQAVH+qeJR2BUO/zOKLuiF55lKIOEadlF8YAeFN8aR1XzPHpYW7ROBhYh
-            A+VfEEBUkRyPpXSNC6goaG78FdgWpbpAtHJvzs5NhKQ6TpCGun8x/2SP6ZDZL0m7
-            xPdnlmqdxyWKE55BQixylGMj/FeNvwOeodz0/aLpXseK600iMnjKim2WYganTexZ
-            aNhj95LLRj4/MWbij48ZtC2F8odGLMomwlBAis/qEjxLKwq92pPEw5aQLDAUMApn
-            3/VBOkQpAoGBAO0PK1bpWuWm4SkufPcvTAepDjRTskTqIXk78uhxXTONzr9n0s3g
-            WFrdJJzX41bV7VAAIX0XCmwwBEGX9sRF563gB3BW2nscGGifMocJesrO8C2y8OgE
-            +wHv/nz4QcBA1QJFW0WIImVJ0e3H0lOa1CqKYr3LVKDDISRWlBJnvpd1AoGBANyT
-            S4udobxwqC9pncuN+epO+poI970atRp9cXYlkoz820f+AJo+AFbK1ZsH7u9q1zeB
-            FcnEgsMoNuKhycTtfL09dYG2lpWT88vfCGv9zr8VLGplyhzemjoNTnO4AwgRiGV+
-            q04ZxUCUN9G/ynA+ZX9reUsNtgJH+EnKWkeNOJgbAoGBAJTGUmLHLP63ztNzk4Xm
-            LwcXuAxrApRxg/R8BSSQEPgL5VcGp6wBQjI0W4f7jXev5rGwg1PoI+hl8iXgY0Qm
-            wxHCaai9OXzN0xvF3YYWEvQ5D07+4GYcyhMbNVHk1A7+ITC9qlxm5X8/5vod0Agc
-            QU85bmLCuyfxjlkp5N/wMBMJAoGAVoxJITApzRnbNDdZ3gwIWsLAm/4WzxGSrCE6
-            iuQ1O7Lfi8EDlYHseiG+bMVRIIoohjPVS8Uald7KomRfGjEhN9PMrqfpMCnMiFss
-            H8uH+vwg4GKuSmOh2lNsTAWQ0vKmNUTdjJiaCDvgJyH9Gcux4axW/HcVypFYwANx
-            JxAne68CgYBaMhsRAbVx3IMUc3UsGuIXdWc4CbY/GFh4zFXcuEoNIF6wowDLYdJf
-            5omXuLQiaBQXNIJ4lhmo3Hg5729CyZvJ5xUGfXRslt8mbF5BBuZfym3k6B25egSz
-            o2AE1MCVKJBpEqdfpIbAm/joY8YiUGrRfMclTpS7HLG6otxrAkPVfg==
-            -----END RSA PRIVATE KEY-----
 
 management:
   endpoints:
