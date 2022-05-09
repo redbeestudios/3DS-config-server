@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ms-config-phe
+spec:
+  selector:
+    app: ms-config-phe
+  ports:
+  - name: http
+    protocol: TCP
+    port: 8080

@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-config-phe
+spec:
+  selector:
+    matchLabels:
+      app: ms-config-phe
+      version: v1
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ms-config-phe
+        version: v1
+    spec:
+      imagePullSecrets:
+      - name: regcred
+      hostAliases:
+      - ip: "10.16.10.72"
+        hostnames:
+        - "jira.prismamp.com.ar"
+      containers:
+      - name: ms-config-phe
+        image: IMAGE_PATTERN
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 8080
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+          limits:
+            memory: "1024Mi"
+            cpu: "600m"
+        livenessProbe:
+          httpGet:
+            port: http
+            path: /actuator/health
+          initialDelaySeconds: 60
+          periodSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            port: http
+            path: /actuator/health
+          initialDelaySeconds: 60
+          periodSeconds: 5
+          failureThreshold: 3
